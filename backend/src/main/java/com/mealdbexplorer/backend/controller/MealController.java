@@ -15,7 +15,7 @@ public class MealController {
         this.mealService = mealService;
     }
 
-    @GetMapping("/search")
+    @GetMapping("/search")// Search meals by name
     public ResponseEntity<String> searchMeal(@RequestParam String name) {
         if (name.isBlank()) {
             throw new IllegalArgumentException("Meal name cannot be empty");
@@ -23,22 +23,22 @@ public class MealController {
         return ResponseEntity.ok(mealService.searchMeal(name));
     }
 
-    @GetMapping("/random")
+    @GetMapping("/random")// Fetch a random meal from TheMealDB API
     public ResponseEntity<String> randomMeal() {
         return ResponseEntity.ok(mealService.randomMeal());
     }
 
-    @GetMapping("/categories")
+    @GetMapping("/categories")// Retrieve all available meal categories
     public ResponseEntity<String> categories() {
         return ResponseEntity.ok(mealService.categories());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}")// Get meal details using meal ID
     public ResponseEntity<String> mealById(@PathVariable String id) {
         return ResponseEntity.ok(mealService.mealById(id));
     }
 
-    @GetMapping("/category/{name}")
+    @GetMapping("/category/{name}")// Get meals belonging to a specific category
     public ResponseEntity<String> mealsByCategory(@PathVariable String name) {
         return ResponseEntity.ok(mealService.mealsByCategory(name));
     }
