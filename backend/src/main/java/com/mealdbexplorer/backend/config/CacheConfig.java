@@ -15,7 +15,7 @@ public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
-
+// Define cache regions used in the application
         CaffeineCacheManager manager =
                 new CaffeineCacheManager(
                         "mealSearch",
@@ -28,7 +28,9 @@ public class CacheConfig {
                         .maximumSize(100)
                         .expireAfterWrite(10, TimeUnit.MINUTES)
         );
-
+// Prevents excessive memory usage by limiting cache size        
+// Cached data expires 10 minutes after being written
+// Ensures users get reasonably fresh API data
         return manager;
     }
 }
