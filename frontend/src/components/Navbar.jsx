@@ -3,7 +3,7 @@ function Navbar() {
     <nav className="navbar navbar-dark bg-primary">
       <div className="container">
         <span className="navbar-brand">
-          🍽️ TheMealDB Explorer
+           TheMealDB Explorer
         </span>
       </div>
     </nav>

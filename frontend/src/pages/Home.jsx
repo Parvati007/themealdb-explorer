@@ -81,7 +81,7 @@ function Home() {
           className="btn btn-success mb-4"
           onClick={randomMeal}
         >
-          I'm Feeling Hungry 🍔
+          I'm Feeling Hungry !!
         </button>
 
         <CategoryList
