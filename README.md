@@ -1,4 +1,4 @@
-# 🍽️ TheMealDB Explorer
+#  TheMealDB Explorer
 
 A small full‑stack app to search, browse and discover recipes, powered by the public
 [TheMealDB API](https://www.themealdb.com/api.php).
@@ -8,18 +8,18 @@ in‑memory caching), and a **React + Vite** front end renders the results.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔎 **Search** meals by name
-- 🗂️ **Browse** by category (Chicken, Vegan, Seafood…)
-- 🎲 **Random meal** — "I'm Feeling Hungry"
-- 📋 **Recipe details** — ingredients, instructions & embedded YouTube video
-- ⚡ **Cached** API responses (10 min TTL, max 100 entries) to stay fast and gentle on the upstream API
-- 📱 Responsive layout (Bootstrap)
+-  **Search** meals by name
+-  **Browse** by category (Chicken, Vegan, Seafood…)
+-  **Random meal** — "I'm Feeling Hungry"
+-  **Recipe details** — ingredients, instructions & embedded YouTube video
+-  **Cached** API responses (10 min TTL, max 100 entries) to stay fast and gentle on the upstream API
+-  Responsive layout (Bootstrap)
 
 ---
 
-## 🧱 Project structure
+##  Project structure
 
 ```
 themealdb-explorer/
@@ -29,14 +29,14 @@ themealdb-explorer/
 
 ---
 
-## 🔧 Prerequisites
+##  Prerequisites
 
 - **Java 21** (JDK)
 - **Node.js 18+** and npm
 
 ---
 
-## 🚀 Running locally
+##  Running locally
 
 The app has two parts — start each in its own terminal.
 
@@ -64,7 +64,7 @@ Open <http://localhost:5173>.
 
 ---
 
-## 📡 API endpoints
+##  API endpoints
 
 Base path: `/api/meals`
 
@@ -84,14 +84,14 @@ All responses are JSON proxied from TheMealDB. Errors return a consistent shape:
 
 ---
 
-## 🛠️ Tech stack
+##  Tech stack
 
 **Backend:** Java 21 · Spring Boot 3.5 · Spring Web (RestClient) · Caffeine cache
 **Frontend:** React 19 · Vite · React Router · Axios · Bootstrap 5
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - Uses TheMealDB's free development key (`1`).
 - Caching is in‑memory (Caffeine); no external store required.
