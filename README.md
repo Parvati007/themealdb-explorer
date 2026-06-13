@@ -95,3 +95,19 @@ All responses are JSON proxied from TheMealDB. Errors return a consistent shape:
 
 - Uses TheMealDB's free development key (`1`).
 - Caching is in‑memory (Caffeine); no external store required.
+
+##  Snapshots
+
+# TheMealDB Explorer
+
+## Home Page
+
+![Home Page](images/home.png)
+
+## Meal Details
+
+![Meal Details](images/info.png)
+
+## Youtube Video
+
+![Youtube Video](images/video.png)
