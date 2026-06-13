@@ -7,12 +7,13 @@ import MealCard from "../components/MealCard";
 import CategoryList from "../components/CategoryList";
 
 function Home() {
+   // State management for meals, categories, and search input
   const [meals, setMeals] = useState([]);
   const [categories, setCategories] = useState([]);
   const [search, setSearch] = useState("");
 
 
-
+   // Fetch categories when the component loads for the first time
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -27,12 +28,13 @@ function Home() {
         console.log(error);
       }
     };
-
+  
     fetchCategories();
   }, []);
-
+  
+  // Search meals by name
   const handleSearch = async () => {
-    if (!search.trim()) return;
+    if (!search.trim()) return;// Prevent empty searches
 
     try {
       const res = await API.get("/search", {

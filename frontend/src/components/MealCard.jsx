@@ -7,7 +7,7 @@ function MealCard({ meal }) {
     <div className="col-md-3 mb-4">
       <div
         className="card h-100"
-        onClick={() => navigate(`/meal/${meal.idMeal}`)}
+        onClick={() => navigate(`/meal/${meal.idMeal}`)}// Navigate to meal details page
       >
         <img
           src={meal.strMealThumb}

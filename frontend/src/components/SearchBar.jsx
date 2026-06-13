@@ -6,7 +6,7 @@ function SearchBar({ search, setSearch, handleSearch }) {
         className="form-control"
         placeholder="Search Meal"
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)} // Update search state on user input
       />
 
       <button
